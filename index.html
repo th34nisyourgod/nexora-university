@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nexora University — Where Discovery Connects</title>
+<meta name="description" content="Nexora University: interdisciplinary research, six schools, one nexus. Explore programs, admissions, and campus life." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,450;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="nav-wrap">
+    <a href="#top" class="brand" aria-label="Nexora University home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="8" r="3.2" class="node n1"/>
+        <circle cx="8" cy="24" r="2.6" class="node n2"/>
+        <circle cx="32" cy="24" r="2.6" class="node n3"/>
+        <circle cx="20" cy="34" r="2.2" class="node n4"/>
+        <line x1="20" y1="8" x2="8" y2="24" class="edge"/>
+        <line x1="20" y1="8" x2="32" y2="24" class="edge"/>
+        <line x1="8" y1="24" x2="20" y2="34" class="edge"/>
+        <line x1="32" y1="24" x2="20" y2="34" class="edge"/>
+        <line x1="8" y1="24" x2="32" y2="24" class="edge edge-dim"/>
+      </svg>
+      <span class="brand-text">Nexora<span class="brand-text-sub">University</span></span>
+    </a>
+
+    <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+      <a href="index.html" class="nav-link ">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="programs.html" class="nav-link">Schools</a>
+      <a href="#life" class="nav-link">Campus Life</a>
+      <a href="#admissions" class="nav-link">Admissions</a>
+      <a href="#news" class="nav-link">News</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="login.html" class="btn btn-ghost nav-hide-sm">Portal Login</a>
+      <a href="#admissions" class="btn btn-solid nav-hide-sm">Apply Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="progress-rail" id="progressRail"><div class="progress-fill" id="progressFill"></div></div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" class="mobile-link">01 — About</a>
+  <a href="programs.html" class="mobile-link">02 — Schools</a>
+  <a href="#life" class="mobile-link">03 — Campus Life</a>
+  <a href="#admissions" class="mobile-link">04 — Admissions</a>
+  <a href="#news" class="mobile-link">05 — News</a>
+  <a href="#contact" class="mobile-link">06 — Contact</a>
+  <a href="login.html" class="mobile-link">07 — Portal Login</a>
+  <a href="#admissions" class="btn btn-solid mobile-apply">Apply Now</a>
+</div>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <canvas id="constellation" class="constellation-canvas" aria-hidden="true"></canvas>
+  <div class="hero-inner">
+    <p class="eyebrow reveal">Est. 1987 · Six Schools · One Nexus</p>
+    <h1 class="hero-title reveal">
+      Where discovery<br/>
+      <span class="hero-title-accent">connects.</span>
+    </h1>
+    <p class="hero-sub reveal">
+      Nexora is a research university built around the idea that breakthroughs happen at intersections —
+      of engineering and art, of biology and code, of ambition and rigor. Six schools, one shared nexus.
+    </p>
+    <div class="hero-cta reveal">
+      <a href="#admissions" class="btn btn-solid">Apply Now</a>
+      <a href="programs.html" class="btn btn-outline">Explore Programs</a>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-line"><div class="scroll-dot"></div></div>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="stats-bar" id="statsBar">
+  <div class="stats-wrap">
+    <div class="stat" id="statFounded">
+      <span class="stat-num" id="statFoundedNum" data-count="1987" data-suffix="">1987</span>
+      <span class="stat-label">Founded</span>
+    </div>
+    <div class="stat" id="statStudents">
+      <span class="stat-num" id="statStudentsNum" data-count="14200" data-suffix="+">14,200+</span>
+      <span class="stat-label">Students</span>
+    </div>
+    <div class="stat" id="statFaculty">
+      <span class="stat-num" id="statFacultyNum" data-count="860" data-suffix="+">860+</span>
+      <span class="stat-label">Faculty</span>
+    </div>
+    <div class="stat" id="statCountries">
+      <span class="stat-num" id="statCountriesNum" data-count="97" data-suffix="">97</span>
+      <span class="stat-label">Countries Represented</span>
+    </div>
+    <div class="stat" id="statAcceptance">
+      <span class="stat-num" id="statAcceptanceNum" data-count="12" data-suffix="%">12%</span>
+      <span class="stat-label">Acceptance Rate</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+  <div class="section-wrap about-grid">
+    <div class="about-copy reveal">
+      <p class="section-eyebrow">NX‑ABOUT</p>
+      <h2 class="section-title">A campus built like a network, not a hierarchy.</h2>
+      <p class="body-text">
+        Most universities organize knowledge into silos. Nexora organizes it into a graph. Every school sits
+        one edge away from every other — an engineer can co-author with a sculptor, a physician can sit in on
+        a philosophy seminar, and a first-year can walk into a lab that's publishing in Nature. We call the
+        connective tissue between disciplines "the nexus," and it shows up everywhere: in our shared studios,
+        our cross-listed courses, and the way our transcripts read less like a checklist and more like a map.
+      </p>
+      <div class="about-points">
+        <div class="about-point">
+          <span class="point-mark">→</span>
+          <div>
+            <h3>Research from year one</h3>
+            <p>68% of undergraduates join a funded lab or studio before their second year.</p>
+          </div>
+        </div>
+        <div class="about-point">
+          <span class="point-mark">→</span>
+          <div>
+            <h3>Need-blind admissions</h3>
+            <p>We meet 100% of demonstrated financial need for every admitted student.</p>
+          </div>
+        </div>
+        <div class="about-point">
+          <span class="point-mark">→</span>
+          <div>
+            <h3>A 7:1 student-faculty ratio</h3>
+            <p>Small enough that your professors know your name — and your work.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-visual reveal">
+      <svg viewBox="0 0 380 420" class="nexus-illustration" aria-hidden="true">
+        <g class="illus-edges">
+          <line x1="190" y1="60" x2="70" y2="150"/>
+          <line x1="190" y1="60" x2="310" y2="150"/>
+          <line x1="190" y1="60" x2="190" y2="210"/>
+          <line x1="70" y1="150" x2="190" y2="210"/>
+          <line x1="310" y1="150" x2="190" y2="210"/>
+          <line x1="70" y1="150" x2="70" y2="300"/>
+          <line x1="310" y1="150" x2="310" y2="300"/>
+          <line x1="190" y1="210" x2="70" y2="300"/>
+          <line x1="190" y1="210" x2="310" y2="300"/>
+          <line x1="70" y1="300" x2="190" y2="360"/>
+          <line x1="310" y1="300" x2="190" y2="360"/>
+        </g>
+        <g class="illus-nodes">
+          <circle cx="190" cy="60" r="9"/>
+          <circle cx="70" cy="150" r="7"/>
+          <circle cx="310" cy="150" r="7"/>
+          <circle cx="190" cy="210" r="10"/>
+          <circle cx="70" cy="300" r="7"/>
+          <circle cx="310" cy="300" r="7"/>
+          <circle cx="190" cy="360" r="8"/>
+        </g>
+        <g class="illus-labels">
+          <text x="190" y="42">ENGINEERING</text>
+          <text x="30" y="140">ARTS</text>
+          <text x="330" y="140">SCIENCES</text>
+          <text x="205" y="215">NEXUS</text>
+          <text x="18" y="330">BUSINESS</text>
+          <text x="322" y="330">MEDICINE</text>
+          <text x="190" y="390">LAW</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SCHOOLS / PROGRAMS ================= -->
+<section class="schools" id="schools">
+  <div class="section-wrap">
+    <p class="section-eyebrow center">NX‑SCHOOLS</p>
+    <h2 class="section-title center">Six schools. One nexus.</h2>
+    <p class="section-sub center">Filter by school to see representative programs, or browse everything.</p>
+    <p class="catalog-link-wrap"><a href="programs.html" class="catalog-link">View the full program catalog →</a></p>
+
+    <div class="filter-tabs" id="filterTabs">
+      <button class="filter-tab active" data-filter="all">All Programs</button>
+      <button class="filter-tab" data-filter="eng">Engineering</button>
+      <button class="filter-tab" data-filter="bus">Business</button>
+      <button class="filter-tab" data-filter="arts">Arts &amp; Humanities</button>
+      <button class="filter-tab" data-filter="sci">Sciences</button>
+      <button class="filter-tab" data-filter="med">Medicine</button>
+      <button class="filter-tab" data-filter="law">Law</button>
+    </div>
+
+    <div class="program-grid" id="programGrid">
+      <article class="program-card" data-cat="eng">
+        <span class="program-code">NX-ENG 210</span>
+        <h3>Robotics &amp; Autonomy</h3>
+        <p>Design and ship an autonomous system by the end of year two.</p>
+        <span class="program-tag">Engineering</span>
+      </article>
+      <article class="program-card" data-cat="eng">
+        <span class="program-code">NX-ENG 340</span>
+        <h3>Structural Systems</h3>
+        <p>From bridge loads to bio-inspired materials, in the same studio.</p>
+        <span class="program-tag">Engineering</span>
+      </article>
+      <article class="program-card" data-cat="bus">
+        <span class="program-code">NX-BUS 150</span>
+        <h3>Behavioral Economics</h3>
+        <p>Why people don't act like the models say they will.</p>
+        <span class="program-tag">Business</span>
+      </article>
+      <article class="program-card" data-cat="bus">
+        <span class="program-code">NX-BUS 305</span>
+        <h3>Venture Design</h3>
+        <p>Build a company from a napkin sketch to a term-sheet pitch.</p>
+        <span class="program-tag">Business</span>
+      </article>
+      <article class="program-card" data-cat="arts">
+        <span class="program-code">NX-ART 120</span>
+        <h3>Printmaking &amp; Code</h3>
+        <p>A joint studio between the press room and the CS department.</p>
+        <span class="program-tag">Arts &amp; Humanities</span>
+      </article>
+      <article class="program-card" data-cat="arts">
+        <span class="program-code">NX-ART 260</span>
+        <h3>Comparative Literature</h3>
+        <p>Reading across six languages, one seminar table.</p>
+        <span class="program-tag">Arts &amp; Humanities</span>
+      </article>
+      <article class="program-card" data-cat="sci">
+        <span class="program-code">NX-SCI 101</span>
+        <h3>Genomics Lab I</h3>
+        <p>Undergrads run their own sequencing project by week four.</p>
+        <span class="program-tag">Sciences</span>
+      </article>
+      <article class="program-card" data-cat="sci">
+        <span class="program-code">NX-SCI 288</span>
+        <h3>Astrophysics</h3>
+        <p>Time on the university's own 1.2m telescope, guaranteed.</p>
+        <span class="program-tag">Sciences</span>
+      </article>
+      <article class="program-card" data-cat="med">
+        <span class="program-code">NX-MED 410</span>
+        <h3>Clinical Foundations</h3>
+        <p>Patient contact hours start earlier here than almost anywhere.</p>
+        <span class="program-tag">Medicine</span>
+      </article>
+      <article class="program-card" data-cat="med">
+        <span class="program-code">NX-MED 130</span>
+        <h3>Bioprinting &amp; Tissue Eng.</h3>
+        <p>Print a scaffold, culture it, and defend the results.</p>
+        <span class="program-tag">Medicine</span>
+      </article>
+      <article class="program-card" data-cat="law">
+        <span class="program-code">NX-LAW 201</span>
+        <h3>Constitutional Clinic</h3>
+        <p>Second-years brief real appellate cases under supervision.</p>
+        <span class="program-tag">Law</span>
+      </article>
+      <article class="program-card" data-cat="law">
+        <span class="program-code">NX-LAW 315</span>
+        <h3>Technology &amp; Policy</h3>
+        <p>Where the engineering quad and the law library actually meet.</p>
+        <span class="program-tag">Law</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="features">
+  <div class="section-wrap">
+    <p class="section-eyebrow center">NX‑WHY</p>
+    <h2 class="section-title center">Built for people who connect dots.</h2>
+    <div class="feature-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 40 40"><path d="M20 4 L20 36 M4 20 L36 20" stroke-linecap="round"/><circle cx="20" cy="20" r="15"/></svg>
+        </div>
+        <h3>Cross-listed everything</h3>
+        <p>Nearly a third of our courses count toward two or more majors — no double-counting forms required.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 40 40"><circle cx="20" cy="12" r="5"/><circle cx="8" cy="30" r="5"/><circle cx="32" cy="30" r="5"/><line x1="20" y1="17" x2="8" y2="25"/><line x1="20" y1="17" x2="32" y2="25"/></svg>
+        </div>
+        <h3>Global research network</h3>
+        <p>Partner labs in 22 countries and a standing exchange with 40 sister institutions.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 40 40"><rect x="6" y="6" width="28" height="28" rx="4"/><path d="M14 20 L18 24 L27 14"/></svg>
+        </div>
+        <h3>Innovation studios</h3>
+        <p>Twelve maker spaces open 24/7, from a bioprinting lab to a full black-box theatre.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 40 40"><path d="M20 6 L34 14 V26 L20 34 L6 26 V14 Z"/><path d="M20 6 V34 M6 14 L34 26 M34 14 L6 26"/></svg>
+        </div>
+        <h3>Need-blind aid</h3>
+        <p>100% of demonstrated financial need met, no loans required, for every admitted student.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CAMPUS LIFE ================= -->
+<section class="life" id="life">
+  <div class="section-wrap">
+    <p class="section-eyebrow center">NX‑LIFE</p>
+    <h2 class="section-title center">Life on the quad.</h2>
+    <div class="gallery-grid">
+      <div class="gallery-card reveal g-tall">
+        <div class="gallery-swatch swatch-1"></div>
+        <div class="gallery-caption"><h3>The Commons</h3><p>Where all six schools eat lunch — on purpose.</p></div>
+      </div>
+      <div class="gallery-card reveal">
+        <div class="gallery-swatch swatch-2"></div>
+        <div class="gallery-caption"><h3>Fabrication Lab</h3><p>Open-access CNC, laser cutters, and a bioprinter.</p></div>
+      </div>
+      <div class="gallery-card reveal">
+        <div class="gallery-swatch swatch-3"></div>
+        <div class="gallery-caption"><h3>Nexus Library</h3><p>1.4 million volumes, open until 3am during finals.</p></div>
+      </div>
+      <div class="gallery-card reveal">
+        <div class="gallery-swatch swatch-4"></div>
+        <div class="gallery-caption"><h3>Riverside Fields</h3><p>19 club sports, no tryouts required.</p></div>
+      </div>
+      <div class="gallery-card reveal g-tall">
+        <div class="gallery-swatch swatch-5"></div>
+        <div class="gallery-caption"><h3>Black Box Theatre</h3><p>Student-run productions, six nights a week.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ADMISSIONS ================= -->
+<section class="admissions" id="admissions">
+  <div class="section-wrap">
+    <p class="section-eyebrow center">NX‑ADMIT</p>
+    <h2 class="section-title center">Five steps to the nexus.</h2>
+
+    <div class="timeline" id="timeline">
+      <div class="timeline-track"><div class="timeline-fill" id="timelineFill"></div></div>
+      <div class="timeline-step" data-step="1">
+        <span class="step-index">01</span>
+        <h3>Explore</h3>
+        <p>Visit campus, sit in on a class, or join a virtual info session.</p>
+        <span class="step-date">Year-round</span>
+      </div>
+      <div class="timeline-step" data-step="2">
+        <span class="step-index">02</span>
+        <h3>Apply</h3>
+        <p>Common App or Nexora App, plus one graded paper of your choosing.</p>
+        <span class="step-date">Due Jan 5</span>
+      </div>
+      <div class="timeline-step" data-step="3">
+        <span class="step-index">03</span>
+        <h3>Interview</h3>
+        <p>A 30-minute conversation with an alum, on your schedule.</p>
+        <span class="step-date">Jan – Feb</span>
+      </div>
+      <div class="timeline-step" data-step="4">
+        <span class="step-index">04</span>
+        <h3>Decision</h3>
+        <p>Every applicant gets a written note, not just a verdict.</p>
+        <span class="step-date">Late March</span>
+      </div>
+      <div class="timeline-step" data-step="5">
+        <span class="step-index">05</span>
+        <h3>Enroll</h3>
+        <p>Confirm your spot and pick your first-year studio.</p>
+        <span class="step-date">May 1</span>
+      </div>
+    </div>
+
+    <div class="admit-form-wrap reveal">
+      <div class="admit-form-copy">
+        <h3>Get the admissions packet</h3>
+        <p>We'll send deadlines, aid estimates, and a sample first-year schedule to your inbox.</p>
+      </div>
+      <form class="admit-form" id="admitForm" novalidate>
+        <div class="field">
+          <input type="text" id="fName" placeholder=" " required />
+          <label for="fName">Full name</label>
+        </div>
+        <div class="field">
+          <input type="email" id="fEmail" placeholder=" " required />
+          <label for="fEmail">Email address</label>
+        </div>
+        <div class="field">
+          <select id="fSchool" required>
+            <option value="" disabled selected>Interested school</option>
+            <option>Engineering</option>
+            <option>Business</option>
+            <option>Arts &amp; Humanities</option>
+            <option>Sciences</option>
+            <option>Medicine</option>
+            <option>Law</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-solid form-submit">
+          <span class="btn-label">Send me the packet</span>
+        </button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FACULTY ================= -->
+<section class="faculty">
+  <div class="section-wrap">
+    <p class="section-eyebrow center">NX‑FACULTY</p>
+    <h2 class="section-title center">People worth studying under.</h2>
+    <div class="faculty-track-wrap">
+      <button class="fac-nav fac-prev" id="facPrev" aria-label="Previous faculty">‹</button>
+      <div class="faculty-track" id="facultyTrack">
+        <div class="faculty-card">
+          <div class="faculty-avatar" style="--hue:220"></div>
+          <h3>Dr. Amara Voss</h3>
+          <p class="faculty-role">Chair, Robotics &amp; Autonomy — Engineering</p>
+          <p class="faculty-quote">"The best hallway in the building is the one between the machine shop and the ethics seminar."</p>
+        </div>
+        <div class="faculty-card">
+          <div class="faculty-avatar" style="--hue:20"></div>
+          <h3>Prof. Halden Cho</h3>
+          <p class="faculty-role">Director, Behavioral Economics Lab — Business</p>
+          <p class="faculty-quote">"I've had more good ideas from art students than from anyone with a finance degree."</p>
+        </div>
+        <div class="faculty-card">
+          <div class="faculty-avatar" style="--hue:150"></div>
+          <h3>Dr. Renata Oduya</h3>
+          <p class="faculty-role">Professor of Genomics — Sciences</p>
+          <p class="faculty-quote">"Undergrads in my lab aren't washing glassware. They're on the paper."</p>
+        </div>
+        <div class="faculty-card">
+          <div class="faculty-avatar" style="--hue:280"></div>
+          <h3>Prof. Idris Katz</h3>
+          <p class="faculty-role">Head, Constitutional Law Clinic — Law</p>
+          <p class="faculty-quote">"Our students argue real cases before they've finished their second year."</p>
+        </div>
+      </div>
+      <button class="fac-nav fac-next" id="facNext" aria-label="Next faculty">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="testimonials">
+  <div class="section-wrap narrow">
+    <div class="testimonial-slider" id="testimonialSlider">
+      <blockquote class="testimonial active">
+        <p>"I came for the engineering program and left co-founding a company with a printmaker I met in a shared studio."</p>
+        <cite>— Jamie Okafor, Engineering &amp; Design '24</cite>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>"My advisor is a physicist. My thesis is about music. Nobody blinked."</p>
+        <cite>— Priya Sundaram, Sciences '25</cite>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>"The financial aid office called me by name before I'd even enrolled. That set the tone for four years."</p>
+        <cite>— Marcus Webb, Business '23</cite>
+      </blockquote>
+    </div>
+    <div class="testimonial-dots" id="testimonialDots"></div>
+  </div>
+</section>
+
+<!-- ================= NEWS ================= -->
+<section class="news" id="news">
+  <div class="section-wrap">
+    <p class="section-eyebrow center">NX‑NEWS</p>
+    <h2 class="section-title center">From around the nexus.</h2>
+    <div class="news-grid">
+      <article class="news-card reveal">
+        <span class="news-date">MAR 14</span>
+        <h3>Fabrication Lab opens a bioprinting bay</h3>
+        <p>A new wing lets undergraduates print tissue scaffolds alongside grad researchers.</p>
+      </article>
+      <article class="news-card reveal">
+        <span class="news-date">FEB 27</span>
+        <h3>Law Clinic wins appellate case pro bono</h3>
+        <p>Third-year students argued the winning brief under faculty supervision.</p>
+      </article>
+      <article class="news-card reveal">
+        <span class="news-date">FEB 09</span>
+        <h3>Nexora joins 22-nation research consortium</h3>
+        <p>New exchange agreements add six partner labs across three continents.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA / NEWSLETTER ================= -->
+<section class="cta-band">
+  <div class="section-wrap cta-wrap">
+    <h2>Ready to find your edge of the graph?</h2>
+    <p>Applications for Fall 2027 open August 1.</p>
+    <div class="hero-cta">
+      <a href="#admissions" class="btn btn-solid">Start Your Application</a>
+      <a href="#contact" class="btn btn-outline">Talk to Admissions</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer" id="contact">
+  <div class="section-wrap footer-grid">
+    <div class="footer-brand">
+      <a href="#top" class="brand">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="8" r="3.2" class="node n1"/>
+          <circle cx="8" cy="24" r="2.6" class="node n2"/>
+          <circle cx="32" cy="24" r="2.6" class="node n3"/>
+          <circle cx="20" cy="34" r="2.2" class="node n4"/>
+          <line x1="20" y1="8" x2="8" y2="24" class="edge"/>
+          <line x1="20" y1="8" x2="32" y2="24" class="edge"/>
+          <line x1="8" y1="24" x2="20" y2="34" class="edge"/>
+          <line x1="32" y1="24" x2="20" y2="34" class="edge"/>
+          <line x1="8" y1="24" x2="32" y2="24" class="edge edge-dim"/>
+        </svg>
+        <span class="brand-text">Nexora<span class="brand-text-sub">University</span></span>
+      </a>
+      <p>1 Nexus Way, Meridian City, 04801</p>
+      <p>admissions@nexora.edu · (555) 019‑2044</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Schools</h4>
+      <a href="programs.html#eng">Engineering</a>
+      <a href="programs.html#bus">Business</a>
+      <a href="programs.html#arts">Arts &amp; Humanities</a>
+      <a href="programs.html#sci">Sciences</a>
+      <a href="programs.html#med">Medicine</a>
+      <a href="programs.html#law">Law</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="#about">About</a>
+      <a href="#life">Campus Life</a>
+      <a href="#admissions">Admissions</a>
+      <a href="#news">News</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Portal</h4>
+      <a href="login.html">Student Login</a>
+      <a href="login.html">Faculty Login</a>
+      <a href="login.html">Admin Login</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Nexora University. All rights reserved.</p>
+    <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
