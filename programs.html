@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>All Programs — Nexora University</title>
+<meta name="description" content="The full Nexora University program catalog, organized by school: Engineering, Business, Arts & Humanities, Sciences, Medicine, and Law." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,450;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand" aria-label="Nexora University home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="8" r="3.2" class="node n1"/>
+        <circle cx="8" cy="24" r="2.6" class="node n2"/>
+        <circle cx="32" cy="24" r="2.6" class="node n3"/>
+        <circle cx="20" cy="34" r="2.2" class="node n4"/>
+        <line x1="20" y1="8" x2="8" y2="24" class="edge"/>
+        <line x1="20" y1="8" x2="32" y2="24" class="edge"/>
+        <line x1="8" y1="24" x2="20" y2="34" class="edge"/>
+        <line x1="32" y1="24" x2="20" y2="34" class="edge"/>
+        <line x1="8" y1="24" x2="32" y2="24" class="edge edge-dim"/>
+      </svg>
+      <span class="brand-text">Nexora<span class="brand-text-sub">University</span></span>
+    </a>
+
+    <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+      <a href="index.html" class="mobile-link"> Home</a>
+      <a href="programs.html" class="nav-link active">Schools</a>
+      <a href="index.html#life" class="nav-link">Campus Life</a>
+      <a href="index.html#admissions" class="nav-link">Admissions</a>
+      <a href="index.html#news" class="nav-link">News</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="login.html" class="btn btn-ghost nav-hide-sm">Portal Login</a>
+      <a href="index.html#admissions" class="btn btn-solid nav-hide-sm">Apply Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="progress-rail" id="progressRail"><div class="progress-fill" id="progressFill"></div></div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" class="mobile-link">01 — Home</a>
+  <a href="programs.html" class="mobile-link">02 — Schools</a>
+  <a href="index.html#life" class="mobile-link">03 — Campus Life</a>
+  <a href="index.html#admissions" class="mobile-link">04 — Admissions</a>
+  <a href="index.html#news" class="mobile-link">05 — News</a>
+  <a href="index.html#contact" class="mobile-link">06 — Contact</a>
+  <a href="login.html" class="mobile-link">07 — Portal Login</a>
+  <a href="index.html#admissions" class="btn btn-solid mobile-apply">Apply Now</a>
+</div>
+
+<main id="top">
+
+<!-- ================= CATALOG HERO ================= -->
+<section class="catalog-hero">
+  <div class="section-wrap">
+    <p class="eyebrow">NX‑CATALOG</p>
+    <h1 class="catalog-title">The full program catalog.</h1>
+    <p class="catalog-sub">
+      Every Nexora program lives inside one of six schools — but almost a third of our courses are
+      cross-listed, so the boundaries below are a map, not a fence. Jump to a school, or scroll through all of them.
+    </p>
+    <div class="catalog-jump" aria-label="Jump to school">
+      <a href="#eng">Engineering</a>
+      <a href="#bus">Business</a>
+      <a href="#arts">Arts &amp; Humanities</a>
+      <a href="#sci">Sciences</a>
+      <a href="#med">Medicine</a>
+      <a href="#law">Law</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ENGINEERING ================= -->
+<section class="catalog-school" id="eng">
+  <div class="section-wrap">
+    <div class="catalog-school-head">
+      <p class="section-eyebrow">SCHOOL 01</p>
+      <h2 class="section-title">Engineering</h2>
+      <p class="section-sub">Where the machine shop and the ethics seminar share a hallway.</p>
+    </div>
+    <div class="program-grid">
+      <article class="program-card">
+        <span class="program-code">NX-ENG 210</span>
+        <h3>Robotics &amp; Autonomy</h3>
+        <p>Design and ship an autonomous system by the end of year two.</p>
+        <span class="program-tag">Engineering</span>
+      </article>
+      <article class="program-card">
+        <span class="program-code">NX-ENG 340</span>
+        <h3>Structural Systems</h3>
+        <p>From bridge loads to bio-inspired materials, in the same studio.</p>
+        <span class="program-tag">Engineering</span>
+      </article>
+      <article class="program-card">
+        <span class="program-code">NX-ENG 118</span>
+        <h3>Foundations of Circuits</h3>
+        <p>The gateway course every engineering student takes first — and half the arts school audits.</p>
+        <span class="program-tag">Engineering</span>
+      </article>
+      <article class="program-card">
+        <span class="program-code">NX-ENG 402</span>
+        <h3>Sustainable Infrastructure</h3>
+        <p>Design a piece of Meridian City's actual water system as your capstone.</p>
+        <span class="program-tag">Engineering</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BUSINESS ================= -->
+<section class="catalog-school alt" id="bus">
+  <div class="section-wrap">
+    <div class="catalog-school-head">
+      <p class="section-eyebrow">SCHOOL 02</p>
+      <h2 class="section-title">Business</h2>
+      <p class="section-sub">Where the spreadsheet meets the studio.</p>
+    </div>
+    <div class="program-grid">
+      <article class="program-card">
+        <span class="program-code">NX-BUS 150</span>
+        <h3>Behavioral Economics</h3>
+        <p>Why people don't act like the models say they will.</p>
+        <span class="program-tag">Business</span>
+      </article>
+      <article class="program-card">
+        <span class="program-code">NX-BUS 305</span>
+        <h3>Venture Design</h3>
+        <p>Build a company from a napkin sketch to a term-sheet pitch.</p>
+        <span class="program-tag">Business</span>
+      </article>
+      <article class="program-card">
+        <span class="program-code">NX-BUS 220</span>
+        <h3>Operations &amp; Supply Chains</h3>
+        <p>Case studies drawn from partner companies, not textbooks.</p>
+        <span class="program-tag">Business</span>
+      </article>
+      <article class="program-card">
+        <span class="program-code">NX-BUS 410</span>
+        <h3>Negotiation Lab</h3>
+        <p>Every session is recorded, reviewed, and argued back to you.</p>
+        <span class="program-tag">Business</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ARTS & HUMANITIES ================= -->
+<section class="catalog-school" id="arts">
+  <div class="section-wrap">
+    <div class="catalog-school-head">
+      <p class="section-eyebrow">SCHOOL 03</p>
+      <h2 class="section-title">Arts &amp; Humanities</h2>
+      <p class="section-sub">Where the press room and the CS department share a studio.</p>
+    </div>
+    <div class="program-grid">
+      <article class="program-card">
+        <span class="program-code">NX-ART 120</span>
+        <h3>Printmaking &amp; Code</h3>
+        <p>A joint studio between the press room and the CS department.</p>
+        <span class="program-tag">Arts &amp; Humanities</span>
+      </article>
+      <article class="program-card">
+        <span class="program-code">NX-ART 260</span>
+        <h3>Comparative Literature</h3>
+        <p>Reading across six languages, one seminar table.</p>
+        <span class="program-tag">Arts &amp; Humanities</span>
+      </article>
+      <article class="program-card">
+        <span class="program-code">NX-ART 305</span>
+        <h3>Philosophy of Technology</h3>
+        <p>Half the enrollment comes from the engineering school, on purpose.</p>
+        <span class="program-tag">Arts &amp; Humanities</span>
+      </article>
+      <article class="program-card">
+        <span class="program-code">NX-ART 140</span>
+        <h3>Black Box Theatre Practicum</h3>
+        <p>Write, direct, or build sets for a season of student-run productions.</p>
+        <span class="program-tag">Arts &amp; Humanities</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SCIENCES ================= -->
+<section class="catalog-school alt" id="sci">
+  <div class="section-wrap">
+    <div class="catalog-school-head">
+      <p class="section-eyebrow">SCHOOL 04</p>
+      <h2 class="section-title">Sciences</h2>
+      <p class="section-sub">Undergrads run their own experiments, not just wash the glassware.</p>
+    </div>
+    <div class="program-grid">
+      <article class="program-card">
+        <span class="program-code">NX-SCI 101</span>
+        <h3>Genomics Lab I</h3>
+        <p>Undergrads run their own sequencing project by week four.</p>
+        <span class="program-tag">Sciences</span>
+      </article>
+      <article class="program-card">
+        <span class="program-code">NX-SCI 288</span>
+        <h3>Astrophysics</h3>
+        <p>Time on the university's own 1.2m telescope, guaranteed.</p>
+        <span class="program-tag">Sciences</span>
+      </article>
+      <article class="program-card">
+        <span class="program-code">NX-SCI 214</span>
+        <h3>Computational Chemistry</h3>
+        <p>Half wet-lab, half cluster time — taught jointly with engineering.</p>
+        <span class="program-tag">Sciences</span>
+      </article>
+      <article class="program-card">
+        <span class="program-code">NX-SCI 330</span>
+        <h3>Field Ecology</h3>
+        <p>A full semester based out of the university's river-basin field station.</p>
+        <span class="program-tag">Sciences</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MEDICINE ================= -->
+<section class="catalog-school" id="med">
+  <div class="section-wrap">
+    <div class="catalog-school-head">
+      <p class="section-eyebrow">SCHOOL 05</p>
+      <h2 class="section-title">Medicine</h2>
+      <p class="section-sub">Patient contact hours start earlier here than almost anywhere.</p>
+    </div>
+    <div class="program-grid">
+      <article class="program-card">
+        <span class="program-code">NX-MED 410</span>
+        <h3>Clinical Foundations</h3>
+        <p>Patient contact hours start earlier here than almost anywhere.</p>
+        <span class="program-tag">Medicine</span>
+      </article>
+      <article class="program-card">
+        <span class="program-code">NX-MED 130</span>
+        <h3>Bioprinting &amp; Tissue Eng.</h3>
+        <p>Print a scaffold, culture it, and defend the results.</p>
+        <span class="program-tag">Medicine</span>
+      </article>
+      <article class="program-card">
+        <span class="program-code">NX-MED 275</span>
+        <h3>Medical Ethics Seminar</h3>
+        <p>Co-taught with the law school's bioethics clinic.</p>
+        <span class="program-tag">Medicine</span>
+      </article>
+      <article class="program-card">
+        <span class="program-code">NX-MED 360</span>
+        <h3>Global Health Practicum</h3>
+        <p>A rotation at one of six partner clinics across three continents.</p>
+        <span class="program-tag">Medicine</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LAW ================= -->
+<section class="catalog-school alt" id="law">
+  <div class="section-wrap">
+    <div class="catalog-school-head">
+      <p class="section-eyebrow">SCHOOL 06</p>
+      <h2 class="section-title">Law</h2>
+      <p class="section-sub">Second-years argue real cases, not just moot ones.</p>
+    </div>
+    <div class="program-grid">
+      <article class="program-card">
+        <span class="program-code">NX-LAW 201</span>
+        <h3>Constitutional Clinic</h3>
+        <p>Second-years brief real appellate cases under supervision.</p>
+        <span class="program-tag">Law</span>
+      </article>
+      <article class="program-card">
+        <span class="program-code">NX-LAW 315</span>
+        <h3>Technology &amp; Policy</h3>
+        <p>Where the engineering quad and the law library actually meet.</p>
+        <span class="program-tag">Law</span>
+      </article>
+      <article class="program-card">
+        <span class="program-code">NX-LAW 240</span>
+        <h3>Contracts</h3>
+        <p>The foundational first-year course, taught in six-person sections.</p>
+        <span class="program-tag">Law</span>
+      </article>
+      <article class="program-card">
+        <span class="program-code">NX-LAW 390</span>
+        <h3>Bioethics &amp; the Law</h3>
+        <p>Cross-listed with the medical school's ethics seminar.</p>
+        <span class="program-tag">Law</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta-band">
+  <div class="section-wrap cta-wrap">
+    <h2>Found something that fits?</h2>
+    <p>Applications for Fall 2027 open August 1.</p>
+    <div class="hero-cta">
+      <a href="index.html#admissions" class="btn btn-solid">Start Your Application</a>
+      <a href="index.html#contact" class="btn btn-outline">Talk to Admissions</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer" id="contact">
+  <div class="section-wrap footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="brand">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="8" r="3.2" class="node n1"/>
+          <circle cx="8" cy="24" r="2.6" class="node n2"/>
+          <circle cx="32" cy="24" r="2.6" class="node n3"/>
+          <circle cx="20" cy="34" r="2.2" class="node n4"/>
+          <line x1="20" y1="8" x2="8" y2="24" class="edge"/>
+          <line x1="20" y1="8" x2="32" y2="24" class="edge"/>
+          <line x1="8" y1="24" x2="20" y2="34" class="edge"/>
+          <line x1="32" y1="24" x2="20" y2="34" class="edge"/>
+          <line x1="8" y1="24" x2="32" y2="24" class="edge edge-dim"/>
+        </svg>
+        <span class="brand-text">Nexora<span class="brand-text-sub">University</span></span>
+      </a>
+      <p>1 Nexus Way, Meridian City, 04801</p>
+      <p>admissions@nexora.edu · (555) 019‑2044</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Schools</h4>
+      <a href="programs.html#eng">Engineering</a>
+      <a href="programs.html#bus">Business</a>
+      <a href="programs.html#arts">Arts &amp; Humanities</a>
+      <a href="programs.html#sci">Sciences</a>
+      <a href="programs.html#med">Medicine</a>
+      <a href="programs.html#law">Law</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="index.html#about">About</a>
+      <a href="index.html#life">Campus Life</a>
+      <a href="index.html#admissions">Admissions</a>
+      <a href="index.html#news">News</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Portal</h4>
+      <a href="login.html">Student Login</a>
+      <a href="login.html">Faculty Login</a>
+      <a href="login.html">Admin Login</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year">2026</span> Nexora University. All rights reserved.</p>
+    <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
